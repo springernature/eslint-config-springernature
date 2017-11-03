@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-springernature",
+  "version": "0.1.0",
+  "description": "ESLint shareable config used at Springer Nature",
+  "license": "",
+  "repository": "springernature/eslint-config-springernature",
+  "homepage": "https://github.com/springernature/eslint-config-springernature",
+  "bugs": "https://github.com/springernature/eslint-config-springernature/issues",
+  "author": "Springer Nature",
+  "engines": {
+    "node": ">=4"
+  },
+  "keywords": [
+    "springer nature",
+    "eslint",
+    "eslintconfig",
+    "lint",
+    "linter",
+    "code style",
+    "static analysis"
+  ],
+  "devDependencies": {
+    "eslint": "^4.10.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.10.0"
+  }
+}

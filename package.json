@@ -1,11 +1,12 @@
 {
-  "name": "eslint-config-springernature",
+  "name": "@springernature/eslint-config-springernature",
   "version": "0.1.0",
   "description": "ESLint shareable config used at Springer Nature",
   "license": "",
   "repository": "springernature/eslint-config-springernature",
   "homepage": "https://github.com/springernature/eslint-config-springernature",
   "bugs": "https://github.com/springernature/eslint-config-springernature/issues",
+  "private": true,
   "author": "Springer Nature",
   "engines": {
     "node": ">=4"

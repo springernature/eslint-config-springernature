@@ -18,7 +18,7 @@ Create an .eslintrc file in our project and include the following.
 
 ```js
 {
-  "extends": "google",
+  "extends": "springernature",
   "rules": {
     // Additional, per-project rules...
   }

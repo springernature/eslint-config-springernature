@@ -2,7 +2,7 @@
 
 module.exports = {
     extends: [
-        'eslint-config-google'
+        'eslint:recommended'
     ].map(require.resolve),
     rules: {}
 };

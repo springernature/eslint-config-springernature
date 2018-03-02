@@ -19,5 +19,38 @@ module.exports = {
     extends: [
         'eslint:recommended'
     ],
-    rules: {}
+    rules: {
+        // eslint:recommended overrides
+        'no-empty': [
+            'error',
+            {
+                'allowEmptyCatch': true
+            }
+        ],
+        'no-self-assign': [
+            'error',
+            {
+                'props': true
+            }
+        ],
+        'no-undef': [
+            'error',
+            {
+                'typeof': true
+            }
+        ],
+        'no-unused-vars': [
+            'error',
+            {
+                'ignoreRestSiblings': true,
+                'argsIgnorePattern': '^_$'
+            }
+        ],
+        'valid-typeof': [
+            'error',
+            {
+                'requireStringLiterals': false
+            }
+        ]
+    }
 };

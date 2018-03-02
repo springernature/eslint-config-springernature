@@ -1,5 +1,5 @@
 {
-  "name": "@springernature/eslint-config-springernature",
+  "name": "@springernature/eslint-config",
   "version": "0.1.0",
   "description": "ESLint shareable config used at Springer Nature",
   "license": "",
@@ -21,9 +21,21 @@
     "static analysis"
   ],
   "devDependencies": {
-    "eslint": "^4.10.0"
+    "eslint": "^4.18.0"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-no-use-extend-native": "^0.3.12",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-unicorn": "^4.0.2"
   },
   "peerDependencies": {
-    "eslint": "^4.10.0"
+    "eslint": "^4.18.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-no-use-extend-native": "^0.3.12",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-unicorn": "^4.0.2"
   }
 }

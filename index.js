@@ -52,8 +52,6 @@ module.exports = {
         'comma-spacing': ['error', {
             'before': false, 'after': true
         }],
-
-        ///
         'comma-style': ['error', 'last'],
         'complexity': 'warn',
         'computed-property-spacing': ['error', 'never'],

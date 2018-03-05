@@ -88,6 +88,8 @@ By default the following environments are set by the config:
 * `node` - Node.js global variables and Node.js scoping
 * `es6` - enable all ECMAScript 6 features except for modules (this automatically sets the `ecmaVersion` parser option to 6)
 
-## Versioning policy
+## Contributing
 
-All breaking changes will bump the MAJOR version as per the [semver convention](https://github.com/springernature/frontend-playbook/blob/master/git/semver.md). Therefore, every new rule addition, or change to an exisiting rule, will increase the MAJOR version. Removing a rule (turning it to `off`) will increase the MINOR version.
+For information on how to contribute to this config, please see the [Contributing guidelines](CONTRIBUTING.md).
+
+We should be maintaining this config by updating plugins to the latest versions, and upgrading ESLint when a new version is available in order to keep up to date with new rules and syntax changes.

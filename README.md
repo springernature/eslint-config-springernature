@@ -1,5 +1,5 @@
 # eslint-config-springernature
-[![Build Status](https://travis-ci.com/springernature/eslint-config-springernature.svg?branch=master)](https://travis-ci.com/springernature/eslint-config-springernature) [![NPM version](http://img.shields.io/npm/v/%40springernature%2Feslint-config.svg)](https://www.npmjs.org/package/%40springernature%2Feslint-config)
+[![Build Status](https://travis-ci.org/springernature/eslint-config-springernature.svg?branch=master)](https://travis-ci.org/springernature/eslint-config-springernature) [![NPM version](http://img.shields.io/npm/v/%40springernature%2Feslint-config.svg)](https://www.npmjs.org/package/%40springernature%2Feslint-config)
 
 ESLint shareable config used at [Springer Nature](https://www.springernature.com).
 

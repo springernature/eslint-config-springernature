@@ -12,7 +12,7 @@ module.exports = {
     // Parser options
     // https://eslint.org/docs/user-guide/configuring#specifying-parser-options
     parserOptions: {
-        ecmaVersion: 2015
+        ecmaVersion: 6
     },
 
     // Plugins

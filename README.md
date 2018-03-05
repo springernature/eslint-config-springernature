@@ -25,7 +25,7 @@ Install the correct versions of each package, which are listed by the command:
 npm info "@springernature/eslint-config@latest" peerDependencies
 ```
 
-If using **npm 5+**, use this shortcut
+If using **npm 5+**, you have [`NPX`](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) available, and can use this shortcut
 
 ```sh
 npx install-peerdeps --dev @springernature/eslint-config

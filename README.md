@@ -13,6 +13,7 @@ Our default export contains all of our ESLint rules, and includes the following 
 * [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn)
 
 If you use yarn:
+
 1. run `npm info "@springernature/eslint-config@latest" peerDependencies` to list the peer dependencies and versions
 2. run `yarn add --dev <dependency>@<version>` for each listed peer dependency
 
@@ -79,6 +80,14 @@ You can optionally create an `.eslintignore` file to ignore file paths. The `.es
 **/coverage/*
 ```
 
+## Environments
+
+By default the following environments are set by the config:
+
+* `browser` - browser global variables
+* `node` - Node.js global variables and Node.js scoping
+* `es6` - enable all ECMAScript 6 features except for modules (this automatically sets the `ecmaVersion` parser option to 6)
+
 ## Versioning policy
 
-All breaking changes will bump the MAJOR version as per the [semver convention](https://github.com/springernature/frontend-playbook/blob/master/git/semver.md). Therefore, every new rule addition will increase the MAJOR version. Removing a rule (turning it to `off`) will increase the MINOR version.
+All breaking changes will bump the MAJOR version as per the [semver convention](https://github.com/springernature/frontend-playbook/blob/master/git/semver.md). Therefore, every new rule addition, or change to an exisiting rule, will increase the MAJOR version. Removing a rule (turning it to `off`) will increase the MINOR version.

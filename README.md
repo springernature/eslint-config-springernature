@@ -2,19 +2,64 @@
 
 ESLint shareable config used at [Springer Nature](https://www.springernature.com).
 
-⚠️ This is a work in progress and this module hasn't been published yet. ⚠️
-
 
 ## Installation
 
-```
-$ npm install --save-dev eslint-config-springernature
+Our default export contains all of our ESLint rules, and includes the following plugins:
+* [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import)
+* [`eslint-plugin-no-use-extend-native`](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)
+* [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node)
+* [`eslint-plugin-promise`](https://github.com/xjamundx/eslint-plugin-promise)
+* [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn)
+
+If you use yarn:
+1. run `npm info "@springernature/eslint-config@latest" peerDependencies` to list the peer dependencies and versions
+2. run `yarn add --dev <dependency>@<version>` for each listed peer dependency
+
+If you use NPM:
+
+Install the correct versions of each package, which are listed by the command:
+
+```sh
+npm info "@springernature/eslint-config@latest" peerDependencies
 ```
 
+If using **npm 5+**, use this shortcut
+
+```sh
+npx install-peerdeps --dev @springernature/eslint-config
+```
+
+If using **npm < 5**, Linux/OSX users can run
+
+```sh
+(
+  export PKG=@springernature/eslint-config;
+  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
+)
+```
+
+Which produces and runs a command like:
+
+```sh
+npm install --save-dev @springernature/eslint-config eslint@^#.#.# eslint-plugin-node@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-o-use-extend-native@^#.#.# eslint-plugin-promise@^#.#.# eslint-plugin-unicorn@^#.#.#
+```
+
+If using **npm < 5**, Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
+
+```sh
+npm install -g install-peerdeps
+install-peerdeps --dev @springernature/eslint-config
+```
+The cli will produce and run a command like:
+
+```sh
+npm install --save-dev @springernature/eslint-config eslint@^#.#.# eslint-plugin-node@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-o-use-extend-native@^#.#.# eslint-plugin-promise@^#.#.# eslint-plugin-unicorn@^#.#.#
+```
 
 ## Usage
 
-Create an `.eslintrc` file in our project and include the following.
+Create an `.eslintrc` file in our project and include the following:
 
 ```js
 {
@@ -25,22 +70,11 @@ Create an `.eslintrc` file in our project and include the following.
 }
 ```
 
-You can optionally create an `.eslintignore` file to ignore file paths. The `.eslintignore` file is a plain text file where each line is a glob pattern indicating which paths should be omitted from linting. For example, the following will ignore all files in the test and coverage folders:
+### Ignore files/folders
+
+You can optionally create an `.eslintignore` file to ignore file paths. The `.eslintignore` file is a plain text file where each line is a glob pattern indicating which paths should be omitted from linting. For example, the following will ignore all files in the `tests` and `coverage` folders:
 
 ```
 **/tests/*
 **/coverage/*
-```
-
-## Plugins
-
-```js
-"devDependencies": {
-  "eslint": "^4.18.0",
-  "eslint-plugin-import": "^2.8.0",
-  "eslint-plugin-no-use-extend-native": "^0.3.12",
-  "eslint-plugin-node": "^6.0.1",
-  "eslint-plugin-promise": "^3.6.0",
-  "eslint-plugin-unicorn": "^4.0.2"
-},
 ```

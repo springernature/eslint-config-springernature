@@ -78,3 +78,7 @@ You can optionally create an `.eslintignore` file to ignore file paths. The `.es
 **/tests/*
 **/coverage/*
 ```
+
+## Versioning policy
+
+All breaking changes will bump the MAJOR version as per the [semver convention](https://github.com/springernature/frontend-playbook/blob/master/git/semver.md). Therefore, every new rule addition will increase the MAJOR version. Removing a rule (turning it to `off`) will increase the MINOR version.

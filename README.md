@@ -12,12 +12,12 @@ Our default export contains all of our [ESLint rules](index.js), and includes th
 * [`eslint-plugin-promise`](https://github.com/xjamundx/eslint-plugin-promise)
 * [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn)
 
-If you use yarn:
+### Using Yarn
 
 1. run `npm info "@springernature/eslint-config@latest" peerDependencies` to list the peer dependencies and versions
 2. run `yarn add --dev <dependency>@<version>` for each listed peer dependency
 
-If you use NPM:
+### Using NPM
 
 Install the correct versions of each package, which are listed by the command:
 

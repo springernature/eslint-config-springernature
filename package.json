@@ -6,7 +6,6 @@
   "repository": "springernature/eslint-config-springernature",
   "homepage": "https://github.com/springernature/eslint-config-springernature",
   "bugs": "https://github.com/springernature/eslint-config-springernature/issues",
-  "private": true,
   "author": "Springer Nature",
   "engines": {
     "node": ">=4"

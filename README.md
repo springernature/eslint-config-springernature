@@ -6,11 +6,12 @@ ESLint shareable config used at [Springer Nature](https://www.springernature.com
 ## Installation
 
 Our default export contains all of our **ESLint rules**, and includes the following plugins:
-* [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import)
-* [`eslint-plugin-no-use-extend-native`](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)
-* [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node)
-* [`eslint-plugin-promise`](https://github.com/xjamundx/eslint-plugin-promise)
-* [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn)
+* [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import) _(core)_
+* [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) _(optional)_
+* [`eslint-plugin-no-use-extend-native`](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native) _(core & legacy)_
+* [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) _(optional)_
+* [`eslint-plugin-promise`](https://github.com/xjamundx/eslint-plugin-promise) _(core)_
+* [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn) _(core)_
 
 ### Using Yarn
 

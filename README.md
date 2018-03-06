@@ -14,8 +14,15 @@ Our default export contains all of our [ESLint rules](index.js), and includes th
 
 ### Using Yarn
 
+#### Manual
+
 1. run `npm info "@springernature/eslint-config@latest" peerDependencies` to list the peer dependencies and versions
 2. run `yarn add --dev <dependency>@<version>` for each listed peer dependency
+
+#### Automated
+
+1. Run `yarn global add install-peerdeps` to add the `install-peerdeps` tool globally.
+2. Run `install-peerdeps --dev @springernature/eslint-config` to add the new dependencies to your `package.json` file. 
 
 ### Using NPM
 

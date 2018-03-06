@@ -67,6 +67,7 @@ This package includes the following *base* configurations:
 And the following extensions:
 
 * [`node`](./configurations/node.js) - To be used in **addition** to your base config if your project contains [Node.js](https://nodejs.org/en/)
+* [`jest`](./configurations/jest.js) - To be used in **addition** to your base config if your project uses [Jest](https://facebook.github.io/jest/)
 
 ### Examples
 
@@ -94,7 +95,8 @@ Create an `.eslintrc` file in your project and include your config options:
 {
   "extends": [
     "@springernature/eslint-config",
-    "@springernature/eslint-config/node"
+    "@springernature/eslint-config/node",
+    "@springernature/eslint-config/jest"
   ],
   "rules": {
     // Additional, per-project rules...

@@ -60,11 +60,17 @@ npm install --save-dev @springernature/eslint-config eslint@^#.#.# eslint-plugin
 
 ## Usage
 
-This package includes the following configurations:
+This package includes the following *base* configurations:
 * [`core`](./configurations/core.js) - The core Springer Nature code style
-* [`node`](./configurations/node.js) - To be used in **addition** to core if your project contains [Node.js](https://nodejs.org/en/)
+* [`legacy`](./configurations/legacy.js) - For legacy JS environments, without ES6 support
 
-To include `core`, create an `.eslintrc` file in your project and include the following:
+And the following extensions:
+
+* [`node`](./configurations/node.js) - To be used in **addition** to your base config if your project contains [Node.js](https://nodejs.org/en/)
+
+### Examples
+
+Create an `.eslintrc` file in your project and include your config options:
 
 ```js
 {
@@ -75,7 +81,14 @@ To include `core`, create an `.eslintrc` file in your project and include the fo
 }
 ```
 
-#### Additional config example
+```js
+{
+  "extends": "@springernature/eslint-config/legacy",
+  "rules": {
+    // Additional, per-project rules...
+  }
+}
+```
 
 ```js
 {
@@ -97,14 +110,6 @@ You can optionally create an `.eslintignore` file to ignore file paths. The `.es
 **/tests/*
 **/coverage/*
 ```
-
-## Environments
-
-By default the following environments are set by the config:
-
-* `browser` - browser global variables
-* `node` - Node.js global variables and Node.js scoping
-* `es6` - enable all ECMAScript 6 features except for modules (this automatically sets the `ecmaVersion` parser option to 6)
 
 ## Contributing
 

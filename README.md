@@ -21,8 +21,8 @@ Our default export contains all of our [ESLint rules](index.js), and includes th
 
 #### Automated
 
-1. Run `yarn global add install-peerdeps` to add the `install-peerdeps` tool globally.
-2. Run `install-peerdeps --dev @springernature/eslint-config` to add the new dependencies to your `package.json` file. 
+If you have `npx` available then you can run `npx install-peerdeps --dev @springernature/eslint-config` to add the `install-peerdeps` tool globally. This will automatically detect and use Yarn. 
+
 
 ### Using NPM
 

@@ -21,7 +21,7 @@ Our default export contains all of our [ESLint rules](index.js), and includes th
 
 #### Automated
 
-If you have `npx` available then you can run `npx install-peerdeps --dev @springernature/eslint-config` to add the `install-peerdeps` tool globally. This will automatically detect and use Yarn. 
+If you have `npx` available then you can run `npx install-peerdeps --dev @springernature/eslint-config` to install the dependencies automatically. This will automatically detect and use Yarn if available. 
 
 
 ### Using NPM

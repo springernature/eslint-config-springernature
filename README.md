@@ -60,11 +60,29 @@ npm install --save-dev @springernature/eslint-config eslint@^#.#.# eslint-plugin
 
 ## Usage
 
-Create an `.eslintrc` file in our project and include the following:
+This package includes the following configurations:
+* [`core`](./configurations/core.js) - The core Springer Nature code style
+* [`node`](./configurations/node.js) - To be used in **addition** to core if your project contains [Node.js](https://nodejs.org/en/)
+
+To include `core`, create an `.eslintrc` file in your project and include the following:
 
 ```js
 {
   "extends": "@springernature/eslint-config",
+  "rules": {
+    // Additional, per-project rules...
+  }
+}
+```
+
+#### Additional config example
+
+```js
+{
+  "extends": [
+    "@springernature/eslint-config",
+    "@springernature/eslint-config/node"
+  ],
   "rules": {
     // Additional, per-project rules...
   }

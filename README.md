@@ -15,8 +15,15 @@ Our default export contains all of our **ESLint rules**, and includes the follow
 
 ### Using Yarn
 
+#### Manual
+
 1. run `npm info "@springernature/eslint-config@latest" peerDependencies` to list the peer dependencies and versions
 2. run `yarn add --dev <dependency>@<version>` for each listed peer dependency
+
+#### Automated
+
+If you have `npx` available then you can run `npx install-peerdeps --dev @springernature/eslint-config` to add the `install-peerdeps` tool globally. This will automatically detect and use Yarn. 
+
 
 ### Using NPM
 

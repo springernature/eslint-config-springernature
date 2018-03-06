@@ -7,11 +7,11 @@ ESLint shareable config used at [Springer Nature](https://www.springernature.com
 
 Our default export contains all of our **ESLint rules**, and includes the following plugins:
 * [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import) _(core)_
-* [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) _(optional)_
-* [`eslint-plugin-no-use-extend-native`](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native) _(core & legacy)_
-* [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) _(optional)_
 * [`eslint-plugin-promise`](https://github.com/xjamundx/eslint-plugin-promise) _(core)_
 * [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn) _(core)_
+* [`eslint-plugin-no-use-extend-native`](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native) _(core & legacy)_
+* [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) _(optional)_
+* [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) _(optional)_
 
 ### Using Yarn
 
@@ -61,20 +61,19 @@ npm install --save-dev @springernature/eslint-config eslint@^#.#.# eslint-plugin
 
 ## Usage
 
-This package includes the following *base* configurations:
-* [`core`](./configurations/core.js) - The core Springer Nature code style
-* [`legacy`](./configurations/legacy.js) - For legacy JS environments, without ES6 support
+Add **one** of the following to your `.eslintrc` file:
+* [`core`](./configurations/core.js) - The core Springer Nature code style (with ES6 support)
+* [`legacy`](./configurations/legacy.js) - For legacy JS environments (without ES6 support)
 
-And the following extensions:
+These _optional_ extensions can be added in **addition** to one of the above configurations:
 
-* [`node`](./configurations/node.js) - To be used in **addition** to your base config if your project contains [Node.js](https://nodejs.org/en/)
-* [`jest`](./configurations/jest.js) - To be used in **addition** to your base config if your project uses [Jest](https://facebook.github.io/jest/)
+* [`node`](./configurations/node.js) - Add if your project contains [Node.js](https://nodejs.org/en/)
+* [`jest`](./configurations/jest.js) - Add if your project uses [Jest](https://facebook.github.io/jest/)
 
 ### Examples
 
-Create an `.eslintrc` file in your project and include your config options:
-
 ```js
+// Core configuration
 {
   "extends": "@springernature/eslint-config",
   "rules": {
@@ -84,6 +83,7 @@ Create an `.eslintrc` file in your project and include your config options:
 ```
 
 ```js
+// Legacy configuration
 {
   "extends": "@springernature/eslint-config/legacy",
   "rules": {
@@ -93,6 +93,7 @@ Create an `.eslintrc` file in your project and include your config options:
 ```
 
 ```js
+// Optional extensions
 {
   "extends": [
     "@springernature/eslint-config",

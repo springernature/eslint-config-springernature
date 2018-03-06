@@ -5,7 +5,7 @@ ESLint shareable config used at [Springer Nature](https://www.springernature.com
 
 ## Installation
 
-Our default export contains all of our [ESLint rules](index.js), and includes the following plugins:
+Our default export contains all of our **ESLint rules**, and includes the following plugins:
 * [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import)
 * [`eslint-plugin-no-use-extend-native`](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)
 * [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node)

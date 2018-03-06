@@ -224,6 +224,6 @@ module.exports = {
 
 		// eslint-plugin-no-use-extend-native
 		// https://github.com/dustinspecker/eslint-plugin-no-use-extend-native
-		'no-use-extend-native/no-use-extend-native': 'error',
+		'no-use-extend-native/no-use-extend-native': 'error'
 	}
 };

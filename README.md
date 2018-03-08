@@ -122,6 +122,12 @@ You can optionally create an `.eslintignore` file to ignore file paths. The `.es
 **/coverage/*
 ```
 
+If you want to ignore the same files and folders contained in the `.gitignore` file, you can do so by omitting the creation of the `.eslintignore` file and using the following command for linting instead:
+
+```sh
+eslint --ignore-path .gitignore **/*.js
+```
+
 ## Contributing
 
 For information on how to contribute to this config, please see the [Contributing guidelines](CONTRIBUTING.md).

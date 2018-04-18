@@ -130,7 +130,7 @@ eslint --ignore-path .gitignore **/*.js
 
 ## Caveats
 
-If you use `gulp-eslint`, you’ll need a version 4.0.0 or above in order to avoid an error regarding the [no-else-return rule](https://github.com/eslint/eslint/issues/9486).
+If you use `gulp-eslint`, you’ll need version 4.0.0 or above. This will ensure that eslint 4.9.0 or greater is used, which is required for some of the rules that we use.
 
 ## Contributing
 

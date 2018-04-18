@@ -66,12 +66,6 @@ The cli will produce and run a command like:
 npm install --save-dev @springernature/eslint-config eslint@^#.#.# eslint-plugin-node@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-o-use-extend-native@^#.#.# eslint-plugin-promise@^#.#.# eslint-plugin-unicorn@^#.#.#
 ```
 
-### Using Gulp
-
-If you use gulp, you can use any of the methods above, but you'll need to replace `eslint` with `gulp-eslint` version 4.0.0 or greater in your `package.json`.
-
-This will ensure that eslint 4.9.0 or greater is used, which is required for some of the rules that we use.
-
 ## Usage
 
 Add **one** of the following to your `.eslintrc` file:
@@ -133,6 +127,10 @@ If you want to ignore the same files and folders contained in the `.gitignore` f
 ```sh
 eslint --ignore-path .gitignore **/*.js
 ```
+
+## Caveats
+
+If you use `gulp-eslint`, you’ll need a version 4.0.0 or above in order to avoid an error regarding the [no-else-return rule](https://github.com/eslint/eslint/issues/9486).
 
 ## Contributing
 

@@ -128,6 +128,10 @@ If you want to ignore the same files and folders contained in the `.gitignore` f
 eslint --ignore-path .gitignore **/*.js
 ```
 
+## Caveats
+
+If you use `gulp-eslint`, you’ll need version 4.0.0 or above. This will ensure that eslint 4.9.0 or greater is used, which is required for some of the rules that we use.
+
 ## Contributing
 
 For information on how to contribute to this config, please see the [Contributing guidelines](CONTRIBUTING.md).

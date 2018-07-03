@@ -7,6 +7,11 @@ module.exports = {
 		node: true
 	},
 
+	// https://eslint.org/docs/user-guide/configuring#specifying-parser-options
+	parserOptions: {
+		ecmaVersion: 8
+	},
+
 	// Plugins
 	plugins: [
 		'node'

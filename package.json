@@ -8,7 +8,7 @@
   "bugs": "https://github.com/springernature/eslint-config-springernature/issues",
   "author": "Springer Nature",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "keywords": [
     "springer nature",

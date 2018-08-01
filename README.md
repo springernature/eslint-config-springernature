@@ -133,6 +133,30 @@ If you want to ignore the same files and folders contained in the `.gitignore` f
 eslint --ignore-path .gitignore **/*.js
 ```
 
+### Per-project rules
+
+We've chosen a sensible set of rules and plugins that helps us catch the most common errors while writing JavaScript. Using a unified linting configuration across Springer Nature makes it easier to share code and resources between different teams and projects.
+
+In certain situations it may be necessary to specify per-project rules. A typical use case is when migrating an old project using a different linter to this eslint config, where it may not be possible to fix all the issues raised by eslint in one go and we opt instead for an iterative approach.
+
+If you need to add per-project rules, consider changing them from `error` to `warn` instead of disabling them completely. This will allow any tests to pass, but will help you remember that a rule has been overwritten:
+
+```js
+  "rules": {
+    "block-scoped-var": "warn",
+  }
+```
+
+If the problem is in one specific line of code, consider wrapping the offending code in `eslint-disable` directives instead of disabling a rule for your whole project, for example:
+
+```js
+/* eslint-disable no-unassigned-import */
+require('polyfill');
+/* eslint-enable no-unassigned-import */
+```
+
+Please use per-project rules and `eslint-disable` directives sparingly and only when strictly necessary.
+
 ## Contributing
 
 This package is used by many active Springer Nature projects. We always welcome issues and pull requests, but we may not always be able to merge your suggestions.

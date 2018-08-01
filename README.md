@@ -1,4 +1,5 @@
 # eslint-config-springernature
+
 [![Build Status](https://travis-ci.org/springernature/eslint-config-springernature.svg?branch=master)](https://travis-ci.org/springernature/eslint-config-springernature) [![NPM version](http://img.shields.io/npm/v/%40springernature%2Feslint-config.svg)](https://www.npmjs.org/package/%40springernature%2Feslint-config)
 
 ESLint shareable config used at [Springer Nature](https://www.springernature.com).
@@ -90,6 +91,9 @@ These _optional_ extensions can be added in **addition** to one of the above con
   "extends": "@springernature/eslint-config",
   "rules": {
     // Additional, per-project rules...
+  },
+  "overrides": [
+    // Overrides for specific files or directories
   }
 }
 ```
@@ -100,6 +104,9 @@ These _optional_ extensions can be added in **addition** to one of the above con
   "extends": "@springernature/eslint-config/legacy",
   "rules": {
     // Additional, per-project rules...
+  },
+  "overrides": [
+    // Overrides for specific files or directories
   }
 }
 ```
@@ -114,6 +121,9 @@ These _optional_ extensions can be added in **addition** to one of the above con
   ],
   "rules": {
     // Additional, per-project rules...
+  },
+  "overrides": [
+    // Overrides for specific files or directories
   }
 }
 ```
@@ -147,7 +157,7 @@ If you need to add per-project rules, consider changing them from `error` to `wa
   }
 ```
 
-If the problem is in one specific line of code, consider using the `eslint-disable-line` directives, instead of disabling a rule for your whole project. For example:
+If the problem is in one specific line of code, consider using the [`eslint-disable-line` directives](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments), instead of disabling a rule for your whole project. For example:
 
 ```js
 // eslint-disable no-unassigned-import
@@ -155,6 +165,26 @@ require('polyfill');
 ```
 
 Please use per-project rules and `eslint-disable-line` directives sparingly and only when strictly necessary.
+
+### Environments and configuration overrides
+
+It's common to have specific files or directories that require different settings. For example, a folder in your project may contains tests that use `mocha`. Instead of defining the global variables that `mocha` expects manually, you can use [`environments`] and [`overrides`](https://eslint.org/docs/user-guide/configuring#disabling-rules-only-for-a-group-of-files). You can also change specific rules for these files.
+
+```js
+  "overrides": [
+    {
+      "files": "tests/**/*.js",
+      "env": {
+        "browser": true,
+        "jquery": true,
+        "mocha": true
+      },
+      "rules": {
+        "no-console": "warn"
+      }
+    }
+  ]
+```
 
 ## Contributing
 

@@ -3,9 +3,17 @@
 
 ESLint shareable config used at [Springer Nature](https://www.springernature.com).
 
+## Requirements
+
+This package requires:
+
+* Node version 6 or greater. Please have a look at our [open source support page](https://github.com/springernature/frontend-playbook/blob/master/practices/open-source-support.md#node-versions) for details on which versions of node we support, and why.
+* `eslint` version 5 or greater.
+
 ## Installation
 
 Our default export contains all of our **ESLint rules**, and includes the following plugins:
+
 * [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import) _(core)_
 * [`eslint-plugin-promise`](https://github.com/xjamundx/eslint-plugin-promise) _(core)_
 * [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn) _(core)_
@@ -13,57 +21,54 @@ Our default export contains all of our **ESLint rules**, and includes the follow
 * [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) _(optional)_
 * [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) _(optional)_
 
-### Using Yarn
+These plugins are defined as `peerDependencies` in `eslint-config-springernature`, which means that you will need to add these to your own project's `devDependencies`.
 
-#### Manual
-
-1. run `npm info "@springernature/eslint-config@latest" peerDependencies` to list the peer dependencies and versions
-2. run `yarn add --dev <dependency>@<version>` for each listed peer dependency
-
-#### Automated
-
-If you have `npx` available then you can run `npx install-peerdeps --dev @springernature/eslint-config` to install the dependencies automatically. This will detect and use Yarn if available. 
-
-
-### Using NPM
-
-Install the correct versions of each package, which are listed by the command:
+You can find the correct version of each dependency by using `npm info`:
 
 ```sh
 npm info "@springernature/eslint-config@latest" peerDependencies
 ```
 
-If using **npm 5+**, you have [`NPX`](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) available, and can use this shortcut
+There are several ways to do install this without effort using the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) tool.
+
+### Using Yarn
+
+#### Manual
+
+Run `yarn add --dev <dependency>@<version>` for each peerDependency listed by the `npm info` command above.
+
+#### Automated
+
+If you have `npx` available (included with npm 5+) then you can run `npx install-peerdeps --dev @springernature/eslint-config` to install the dependencies automatically. This will detect and use Yarn if available.
+
+### Using NPM
+
+If you're using npm 5+, then you can use `npx` to install the dependencies automatically:
 
 ```sh
 npx install-peerdeps --dev @springernature/eslint-config
 ```
 
-If using **npm < 5**, Linux/OSX users can run
+If you're using an older version of npm where `npx` is not available, you can manually install and run `install-peerdeps`.
+
+```sh
+npm install -g install-peerdeps
+install-peerdeps --dev @springernature/eslint-config
+```
+
+The cli will produce and run a command like:
+
+```sh
+npm install --save-dev @springernature/eslint-config eslint@^#.#.# eslint-plugin-node@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-o-use-extend-native@^#.#.# eslint-plugin-promise@^#.#.# eslint-plugin-unicorn@^#.#.#
+```
+
+Alternatively, you can use the following shell script:
 
 ```sh
 (
   export PKG=@springernature/eslint-config;
   npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
 )
-```
-
-Which produces and runs a command like:
-
-```sh
-npm install --save-dev @springernature/eslint-config eslint@^#.#.# eslint-plugin-node@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-o-use-extend-native@^#.#.# eslint-plugin-promise@^#.#.# eslint-plugin-unicorn@^#.#.#
-```
-
-If using **npm < 5**, Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
-
-```sh
-npm install -g install-peerdeps
-install-peerdeps --dev @springernature/eslint-config
-```
-The cli will produce and run a command like:
-
-```sh
-npm install --save-dev @springernature/eslint-config eslint@^#.#.# eslint-plugin-node@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-o-use-extend-native@^#.#.# eslint-plugin-promise@^#.#.# eslint-plugin-unicorn@^#.#.#
 ```
 
 ## Usage
@@ -100,7 +105,7 @@ These _optional_ extensions can be added in **addition** to one of the above con
 ```
 
 ```js
-// Optional extensions
+// Core with optional extensions
 {
   "extends": [
     "@springernature/eslint-config",
@@ -128,12 +133,8 @@ If you want to ignore the same files and folders contained in the `.gitignore` f
 eslint --ignore-path .gitignore **/*.js
 ```
 
-## Caveats
-
-If you use `gulp-eslint`, you’ll need version 4.0.0 or above. This will ensure that eslint 4.9.0 or greater is used, which is required for some of the rules that we use.
-
 ## Contributing
 
-For information on how to contribute to this config, please see the [Contributing guidelines](CONTRIBUTING.md).
+This package is used by many active Springer Nature projects. We always welcome issues and pull requests, but we may not always be able to merge your suggestions.
 
-We should be maintaining this config by updating plugins to the latest versions, and upgrading ESLint when a new version is available in order to keep up to date with new rules and syntax changes.
+If we decide that we can't merge your PR or act on your issue, it's nothing personal! We love to see new contributors, and we strive to provide a welcoming and inclusive environment.

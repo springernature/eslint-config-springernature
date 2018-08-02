@@ -147,15 +147,14 @@ If you need to add per-project rules, consider changing them from `error` to `wa
   }
 ```
 
-If the problem is in one specific line of code, consider wrapping the offending code in `eslint-disable` directives instead of disabling a rule for your whole project, for example:
+If the problem is in one specific line of code, consider using the `eslint-disable-line` directives, instead of disabling a rule for your whole project. For example:
 
 ```js
-/* eslint-disable no-unassigned-import */
+// eslint-disable no-unassigned-import
 require('polyfill');
-/* eslint-enable no-unassigned-import */
 ```
 
-Please use per-project rules and `eslint-disable` directives sparingly and only when strictly necessary.
+Please use per-project rules and `eslint-disable-line` directives sparingly and only when strictly necessary.
 
 ## Contributing
 

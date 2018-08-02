@@ -168,7 +168,7 @@ Please use per-project rules and `eslint-disable-line` directives sparingly and 
 
 ### Environments and configuration overrides
 
-It's common to have specific files or directories that require different settings. For example, a folder in your project may contains tests that use `mocha`. Instead of defining the global variables that `mocha` expects manually, you can use [`environments`] and [`overrides`](https://eslint.org/docs/user-guide/configuring#disabling-rules-only-for-a-group-of-files). You can also change specific rules for these files.
+It's common to have specific files or directories that require different settings. For example, a folder in your project may contains tests that use `mocha`. Instead of defining the global variables that `mocha` expects manually, you can use [`environments`](https://eslint.org/docs/user-guide/configuring#specifying-environments) and [`overrides`](https://eslint.org/docs/user-guide/configuring#disabling-rules-only-for-a-group-of-files). You can also change specific rules for these files.
 
 ```js
   "overrides": [

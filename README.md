@@ -107,7 +107,7 @@ These _optional_ extensions can be added in **addition** to one of the above con
   },
   "overrides": [
     // Overrides for specific files or directories
-  }
+  ]
 }
 ```
 

@@ -157,14 +157,16 @@ If you need to add per-project rules, consider changing them from `error` to `wa
   }
 ```
 
-If the problem is in one specific line of code, consider using the [`eslint-disable-line` directives](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments), instead of disabling a rule for your whole project. For example:
+If the problem is in one specific line of code, consider using the [`eslint-disable-line` or `eslint-disable-next-line` directives](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments), instead of disabling a rule for your whole project. For example:
 
 ```js
-// eslint-disable no-unassigned-import
+// eslint-disable-next-line no-unassigned-import
 require('polyfill');
+
+const zero; // eslint-disable-line no-unused-vars
 ```
 
-Please use per-project rules and `eslint-disable-line` directives sparingly and only when strictly necessary.
+Please use per-project rules and `eslint-disable-line` and `eslint-disable-next-line` directives sparingly and only when strictly necessary.
 
 ### Environments and configuration overrides
 

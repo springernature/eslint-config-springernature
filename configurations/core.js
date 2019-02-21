@@ -250,7 +250,6 @@ module.exports = {
 			commonjs: true
 		}],
 		'import/order': 'error',
-		'import/prefer-default-export': 'error',
 		'import/no-unassigned-import': ['error', {
 			allow: [
 				'babel-polyfill',

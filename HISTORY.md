@@ -1,5 +1,8 @@
 # History
 
+## 2.1.0 (2019-05-15)
+	* Remove `import/prefer-default-export` rule
+
 ## 2.0.0 (2018-07-17)
 	* Update ESLint to version 5
 	  - https://github.com/eslint/eslint/blob/master/docs/user-guide/migrating-to-5.0.0.md

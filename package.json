@@ -1,6 +1,6 @@
 {
   "name": "@springernature/eslint-config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "ESLint shareable config used at Springer Nature",
   "license": "",
   "repository": "springernature/eslint-config-springernature",

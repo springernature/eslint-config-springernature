@@ -1,5 +1,8 @@
 # History
 
+## 2.1.1 (2019-08-29)
+	* Fix `no-unused-vars > argsIgnorePattern` to ignore underscored variable names
+
 ## 2.1.0 (2019-05-15)
 	* Remove `import/prefer-default-export` rule
 

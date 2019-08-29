@@ -158,7 +158,7 @@ module.exports = {
 		'no-unused-expressions': 'error',
 		'no-unused-vars': ['error', {
 			'ignoreRestSiblings': true,
-			'argsIgnorePattern': '^_$'
+			'argsIgnorePattern': '^_'
 		}],
 		'no-use-before-define': ['error', 'nofunc'],
 		'no-useless-call': 'error',

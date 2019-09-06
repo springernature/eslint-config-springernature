@@ -1,0 +1,13 @@
+{
+	"extends": [
+		"@springernature/eslint-config",
+		"@springernature/eslint-config/node",
+		"@springernature/eslint-config/jest"
+	],
+	"rules": {
+		// Additional, per-project rules...
+	},
+	"overrides": [
+		// Overrides for specific files or directories
+	]
+}

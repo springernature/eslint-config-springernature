@@ -8,8 +8,8 @@ ESLint shareable config used at [Springer Nature](https://www.springernature.com
 
 This package requires:
 
-* Node version 6 or greater. Please have a look at our [open source support page](https://github.com/springernature/frontend-playbook/blob/master/practices/open-source-support.md#node-versions) for details on which versions of node we support, and why.
-* `eslint` version 5 or greater.
+* Node version 8 or greater. Please have a look at our [open source support page](https://github.com/springernature/frontend-playbook/blob/master/practices/open-source-support.md#node-versions) for details on which versions of node we support, and why.
+* `eslint` version 6 or greater.
 
 ## Installation
 

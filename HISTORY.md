@@ -1,12 +1,12 @@
 # History
 
-## 3.0.0 (2019-09-06)
+## 3.0.0 (2019-09-24)
 
 * [`[Breaking]`](https://github.com/eslint/eslint/blob/master/docs/user-guide/migrating-to-6.0.0.md) Update ESLint to version 6, which drops support for Node 6. Fixes a vulnerability present in eslint <6.2.1
 * [`[Breaking]`](https://github.com/jest-community/eslint-plugin-jest/releases/tag/v22.0.0) Update `eslint-plugin-jest` from v21 to v22
 * [`[Breaking]`](https://github.com/mysticatea/eslint-plugin-node/releases) Update `eslint-plugin-node` from v6 to v10
 * [`[Breaking]`](https://github.com/xjamundx/eslint-plugin-promise/blob/master/CHANGELOG.md#400) Update `eslint-plugin-promise` from v3 to v4
-* [`[Breaking]`](https://github.com/sindresorhus/eslint-plugin-unicorn/releases) Update `eslint-plugin-unicorn` from v4 to v10
+* [`[Breaking]`](https://github.com/sindresorhus/eslint-plugin-unicorn/releases) Update `eslint-plugin-unicorn` from v4 to v11
 * Update `eslint-plugin-import`
 * Update `eslint-plugin-no-use-extend-native`
 * Add [additional example files](./examples)

@@ -1,5 +1,9 @@
 # History
 
+## 4.0.1 (2020-02-18)
+
+* Switch off `unicorn/prefer-node-append` rule for IE support
+
 ## 4.0.0 (2019-11-20)
 
 * [`[Breaking]`](https://github.com/sindresorhus/eslint-plugin-unicorn/releases) Update `eslint-plugin-unicorn` from v12 to v13

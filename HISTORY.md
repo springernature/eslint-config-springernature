@@ -2,7 +2,7 @@
 
 ## 4.0.1 (2020-02-18)
 
-* Switch off `unicorn/prefer-node-append` rule
+* Switch off `unicorn/prefer-node-append` rule for IE support
 
 ## 4.0.0 (2019-11-20)
 

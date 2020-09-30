@@ -1,5 +1,10 @@
 # History
 
+## 4.0.2 (2020-09-30)
+
+* Switch off `unicorn/prefer-dataset` rule as not Element.dataset not supported by ie10
+
+
 ## 4.0.1 (2020-02-18)
 
 * Switch off `unicorn/prefer-node-append` rule for IE support

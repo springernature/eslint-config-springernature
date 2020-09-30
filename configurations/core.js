@@ -275,6 +275,7 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn
 		'unicorn/prefer-spread': 'off',
 		'unicorn/no-new-buffer': 'off',
+		'unicorn/prefer-dataset': 'off',
 		'unicorn/prefer-node-append': 'off'
 	}
 };

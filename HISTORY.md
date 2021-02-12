@@ -2,7 +2,7 @@
 
 ## 4.0.3 (2021-02-12)
 
-* Disables `no-return-await` rule as v8 changes render `return await` useful
+* Disables `no-return-await` rule in core as v8 changes render `return await` useful
 
 ## 4.0.2 (2020-09-30)
 

@@ -138,7 +138,7 @@ module.exports = {
 		'no-restricted-modules': ['error', 'domain', 'freelist', 'smalloc', 'sys', 'colors'],
 		'no-restricted-syntax': ['error', 'WithStatement'],
 		'no-return-assign': ['error', 'always'],
-		'no-return-await': 'error',
+		'no-return-await': 'off',
 		'no-script-url': 'error',
 		'no-self-assign': ['error', {
 			'props': true

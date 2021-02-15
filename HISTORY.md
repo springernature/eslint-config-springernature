@@ -1,5 +1,11 @@
 # History
 
+## 5.0.0 (2021-02-15)
+
+* Major version updates to many dependencies
+* Allows these common node variable names: `err` `req` `res`
+* Adds MIT license
+
 ## 4.0.3 (2021-02-12)
 
 * Disables `no-return-await` rule in core as v8 changes render `return await` useful

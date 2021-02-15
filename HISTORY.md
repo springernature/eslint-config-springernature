@@ -1,5 +1,15 @@
 # History
 
+## 5.0.0 (2021-02-15)
+
+* Updates all dependencies, the following updates are **breaking**:
+  * [`[Breaking]`](https://github.com/eslint/eslint/releases) Update `eslint` from v6 to v7
+  * [`[Breaking]`](https://github.com/jest-community/eslint-plugin-jest/releases/tag/v24.0.0) Update `eslint-plugin-jest` from v23 to v24
+  * [`[Breaking]`](https://github.com/mysticatea/eslint-plugin-node/releases/tag/v11.1.0) Update `eslint-plugin-node` from v10 to v11
+  * [`[Breaking]`](https://github.com/sindresorhus/eslint-plugin-unicorn/releases) Update `eslint-plugin-unicorn` from v13 to v28
+* For node projects, allow these common variable names: `err` `req` `res`
+* Adds MIT license
+
 ## 4.0.3 (2021-02-12)
 
 * Disables `no-return-await` rule in core as v8 changes render `return await` useful

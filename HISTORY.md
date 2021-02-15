@@ -7,7 +7,7 @@
   * [`[Breaking]`](https://github.com/jest-community/eslint-plugin-jest/releases/tag/v24.0.0) Update `eslint-plugin-jest` from v23 to v24
   * [`[Breaking]`](https://github.com/mysticatea/eslint-plugin-node/releases/tag/v11.1.0) Update `eslint-plugin-node` from v10 to v11
   * [`[Breaking]`](https://github.com/sindresorhus/eslint-plugin-unicorn/releases) Update `eslint-plugin-unicorn` from v13 to v28
-* Allows these common node variable names: `err` `req` `res`
+* For node projects, allow these common variable names: `err` `req` `res`
 * Adds MIT license
 
 ## 4.0.3 (2021-02-12)

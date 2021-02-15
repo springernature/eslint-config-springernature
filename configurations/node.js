@@ -1,18 +1,20 @@
 'use strict';
 
 module.exports = {
-	// Environment
 	// https://eslint.org/docs/user-guide/configuring#specifying-environments
 	env: {
 		node: true
 	},
 
-	// Plugins
+	// https://eslint.org/docs/user-guide/configuring/language-options#specifying-parser-options
+	parserOptions: {
+		sourceType: 'script'
+	},
+
 	plugins: [
 		'node'
 	],
 
-	// The lint rules
 	rules: {
 		'no-console': 'off',
 		// eslint-plugin-node
@@ -20,6 +22,10 @@ module.exports = {
 		'node/no-unpublished-bin': 'error',
 		'node/process-exit-as-throw': 'error',
 		'node/no-deprecated-api': 'error',
+		'strict': [
+			'error',
+			'global'
+		],
 		'unicorn/catch-error-name': [
 			'error',
 			{

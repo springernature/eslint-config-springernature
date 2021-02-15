@@ -1,5 +1,9 @@
 # History
 
+## 5.1.0 (2021-02-15)
+
+* For node environments, requires use of "global form of 'use strict'" i.e. requires `'use strict';` at top of file.
+
 ## 5.0.0 (2021-02-15)
 
 * Updates all dependencies, the following updates are **breaking**:

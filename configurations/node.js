@@ -19,6 +19,24 @@ module.exports = {
 		// https://github.com/mysticatea/eslint-plugin-node
 		'node/no-unpublished-bin': 'error',
 		'node/process-exit-as-throw': 'error',
-		'node/no-deprecated-api': 'error'
+		'node/no-deprecated-api': 'error',
+		'unicorn/catch-error-name': [
+			'error',
+			{
+				'ignore': [
+					'err'
+				]
+			}
+		],
+		'unicorn/prevent-abbreviations': [
+			'error',
+			{
+				'whitelist': {
+					'err': true,
+					'req': true,
+					'res': true
+				}
+			}
+		]
 	}
 };

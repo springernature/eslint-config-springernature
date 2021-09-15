@@ -3,6 +3,8 @@
 ## 5.0.1 (2021-09-15)
 
 * Switch off `unicorn/prefer-dom-node-remove` rule for IE support
+* Rename `unicorn/prefer-node-remove` to `unicorn/prefer-dom-node-dataset` following deprecation
+* Rename `unicorn/prefer-dataset` to `unicorn/prefer-dom-node-dataset` following deprecation
 
 ## 5.0.0 (2021-02-15)
 

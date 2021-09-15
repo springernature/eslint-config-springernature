@@ -276,6 +276,7 @@ module.exports = {
 		'unicorn/prefer-spread': 'off',
 		'unicorn/no-new-buffer': 'off',
 		'unicorn/prefer-dataset': 'off',
-		'unicorn/prefer-node-append': 'off'
+		'unicorn/prefer-node-append': 'off',
+		'unicorn/prefer-dom-node-remove': 'off'
 	}
 };

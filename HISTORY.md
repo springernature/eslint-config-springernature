@@ -1,8 +1,12 @@
 # History
 
+## 5.0.3 (2021-11-12)
+
+* Fixes previous history description for version 5.0.2 as was incorrect.
+
 ## 5.0.2 (2021-11-12)
 
-* Bumps all minor and patch npm dependency versions
+* Bumps major, minor and patch versions of all dependencies except eslint-plugin-unicorn.
 
 ## 5.0.1 (2021-09-15)
 

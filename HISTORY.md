@@ -1,5 +1,13 @@
 # History
 
+## 5.0.5 (2021-11-12)
+
+* Attempts again to revert versions of npm dependencies back to same as 5.0.1.
+
+## 5.0.4 (2021-11-12)
+
+* Reverts versions of npm dependencies back to same as 5.0.1.
+
 ## 5.0.3 (2021-11-12)
 
 * Fixes previous history description for version 5.0.2 as was incorrect.

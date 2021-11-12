@@ -1,5 +1,9 @@
 # History
 
+## 5.0.2 (2021-11-12)
+
+* Bumps all minor and patch npm dependency versions
+
 ## 5.0.1 (2021-09-15)
 
 * Switch off `unicorn/prefer-dom-node-remove` rule for IE support

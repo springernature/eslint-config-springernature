@@ -31,7 +31,7 @@ module.exports = {
 		'unicorn/prevent-abbreviations': [
 			'error',
 			{
-				'whitelist': {
+				'allowList': {
 					'err': true,
 					'req': true,
 					'res': true

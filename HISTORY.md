@@ -1,5 +1,12 @@
 # History
 
+## 6.0.0 (2023-06-21)
+
+* Bump dependencies so that ESLint v8.* can be used in projects that also use @springernature/eslint-config
+* In fact at least ESLint v8.38.0 is needed due to breaking changes in `eslint-plugin-unicorn` v47.0.0
+* Requires at least Node v16, but since security support for v16 is running out on 11 Sep 2023, we say that we reqiure at least v18
+* The upgrade from `eslint-plugin-unicorn` v28 to v47 brought mostly bugfixes and new features. The only breaking change affecting this repo was the chnage of the `prevent-abbreviations` rule's setting `whitelist` to `allowlist` in v30.0.0.
+
 ## 5.0.5 (2021-11-12)
 
 * Attempts again to revert versions of npm dependencies back to same as 5.0.1.

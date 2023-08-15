@@ -11,6 +11,20 @@ This package requires:
 * [Node version 18 or greater](https://nodejs.org/en/download/releases) due to support for v16 running out soon this year. Please have a look at our [open source support page](https://github.com/springernature/frontend-playbook/blob/master/practices/open-source-support.md#node-versions) for details on which versions of node we support, and why. Version 5 of this package supports Node versions >=8 and <16.
 * `eslint` version 8.38.0 or greater (due to eslint-plugin-unicorn v47.0.0).
 
+## Upgrade note
+
+With version _6.0.0_, `eslint-config-springernature` switches to _ESlint version 8_, which is a major update. Up to version _5.x_,  `eslint-config-springernature` worked fine together with the module `gulp-eslint`. From version _6_ on, `gulp-eslint` will fail with the error message
+
+```shell
+Environment key "es2024" is unknown
+```
+
+which is related to the upgrade to _ESlint 8_.
+
+`gulp-eslint` has not been maintained any more for years now and seems to be dead. Luckily, there's an updated version of that module called `gulp-eslint-new`, which works fine with _ESlint 8_.
+
+So in case you are using `gulp-eslint` and want to update `eslint-config-springernature` to version _6_, then you should replace `gulp-eslint` with `gulp-eslint-new`. 
+
 ## Installation
 
 Our default export contains all of our **ESLint rules**, and includes the following plugins:
@@ -75,6 +89,7 @@ Alternatively, you can use the following shell script:
 ## Usage
 
 Add **one** of the following to your `.eslintrc` file:
+
 * [`core`](./configurations/core.js) - The core Springer Nature code style (with ES6 support)
 * [`legacy`](./configurations/legacy.js) - For legacy JS environments (without ES6 support)
 

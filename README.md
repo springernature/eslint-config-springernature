@@ -23,7 +23,7 @@ which is related to the upgrade to _ESlint 8_.
 
 `gulp-eslint` has not been maintained for several years now and seems to be dead. Luckily, there's an updated version of that module called `gulp-eslint-new`, which works well with _ESlint 8_.
 
-So in case you are using `gulp-eslint` and want to update `eslint-config-springernature` to version _6_, then you should replace `gulp-eslint` with `gulp-eslint-new`. 
+So if you are using `gulp-eslint` and want to update `eslint-config-springernature` to version _6_, then you should replace `gulp-eslint` with `gulp-eslint-new`. 
 
 ## Installation
 

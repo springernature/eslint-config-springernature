@@ -1,5 +1,11 @@
 # History
 
+## 7.0.0 (2024-04-10)
+
+* Switch from ESLint v8 to v9, which includes the switch from `eslintrc` configuration files to the _flat config_ format. [Here you can find a migration guide from eslintrc to flat config files](https://eslint.org/docs/latest/use/configure/migration-guide).
+* Upgrade `eslint-plugin-unicorn` from _v47.x_ to _v52.0.0_.
+* Requires technically at least Node v20, but since ESLint v9 drops support for versions lower than _18.18_ or _19_.
+
 ## 6.0.0 (2023-06-21)
 
 * Bump dependencies so that ESLint v8.* can be used in projects that also use @springernature/eslint-config

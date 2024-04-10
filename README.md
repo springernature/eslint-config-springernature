@@ -8,22 +8,14 @@ ESLint shareable config used at [Springer Nature](https://www.springernature.com
 
 This package requires:
 
-* [Node version 18 or greater](https://nodejs.org/en/download/releases) due to support for v16 running out soon this year. Please have a look at our [open source support page](https://github.com/springernature/frontend-playbook/blob/master/practices/open-source-support.md#node-versions) for details on which versions of node we support, and why. Version 5 of this package supports Node versions >=8 and <16.
-* `eslint` version 8.38.0 or greater (due to eslint-plugin-unicorn v47.0.0).
+* [Node version 20 or greater](https://nodejs.org/en/download/releases) due to support for all older versions than v18.18 and v19 has been dropped by ESLint v8. Please have a look at our [open source support page](https://github.com/springernature/frontend-playbook/blob/master/practices/open-source-support.md#node-versions) for details on which versions of node we support, and why. Version 5 of this package supports Node versions >=8 and <16.
+* `eslint` version 9.0.0 or greater.
 
 ## Upgrade note
 
-With version _6.0.0_, `eslint-config-springernature` switches to _ESlint version 8_, which is a major update. Up to version _5.x_,  `eslint-config-springernature` worked fine together with the module `gulp-eslint`. From version _6_ on, `gulp-eslint` will fail with the error message
+With version _7.0.0_, _eslint-config-springernature_ switches to _ESlint version 9_, which is a major update. Up to _ESlint version 8.x_,  _eslint-config-springernature_ worked fine together with the now deprecated `eslintrc` config file format. Flat config is now the default configuration format for ESLint. So if you want work with `eslintrc`, you should use _eslint-config-springernature version 6.x_ or older.
 
-```shell
-Environment key "es2024" is unknown
-```
-
-which is related to the upgrade to _ESlint 8_.
-
-`gulp-eslint` has not been maintained for several years now and seems to be dead. Luckily, there's an updated version of that module called `gulp-eslint-new`, which works well with _ESlint 8_.
-
-So if you are using `gulp-eslint` and want to update `eslint-config-springernature` to version _6_, then you should replace `gulp-eslint` with `gulp-eslint-new`. 
+Additionally, _eslint-config-springernature version 7.0.0_ upgrades `eslint-plugin-unicorn` from _v47.x_ to _v52.0.0_.
 
 ## Installation
 

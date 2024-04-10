@@ -1,1 +1,1 @@
-module.exports = require('./configurations/legacy');
+export { default as default } from "./configurations/legacy";

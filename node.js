@@ -1,1 +1,1 @@
-module.exports = require('./configurations/node');
+export { default as default } from "./configurations/node";

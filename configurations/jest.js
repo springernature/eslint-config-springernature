@@ -1,20 +1,15 @@
-'use strict';
+import jest from 'eslint-plugin-jest';
 
-module.exports = {
-	// Environment
-	// https://eslint.org/docs/user-guide/configuring#specifying-environments
-	env: {
-		jest: true
+export default [
+	jest.configs.recommended,
+	{
+        languageOptions: {
+			globals: {
+				jest: true,
+			},
+		},
+		plugins:{
+			jest,
+		},
 	},
-
-	// Plugins
-	// https://github.com/jest-community/eslint-plugin-jest
-	plugins: [
-		'jest'
-	],
-
-	// The lint rules
-	extends: [
-		'plugin:jest/recommended'
-	]
-};
+];

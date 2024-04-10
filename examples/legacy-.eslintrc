@@ -1,9 +1,0 @@
-{
-	"extends": "@springernature/eslint-config/legacy",
-	"rules": {
-		// Additional, per-project rules...
-	},
-	"overrides": [
-		// Overrides for specific files or directories
-	]
-}

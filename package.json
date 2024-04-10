@@ -1,6 +1,6 @@
 {
   "name": "@springernature/eslint-config",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "ESLint shareable config used at Springer Nature",
   "license": "MIT",
   "repository": "springernature/eslint-config-springernature",
@@ -8,7 +8,7 @@
   "bugs": "https://github.com/springernature/eslint-config-springernature/issues",
   "author": "Springer Nature",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "keywords": [
     "springer nature",
@@ -21,21 +21,21 @@
     "static analysis"
   ],
   "devDependencies": {
-    "eslint": "^8.43.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jest": "^27.2.2",
+    "eslint": "^9.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^28.2.0",
     "eslint-plugin-no-use-extend-native": "^0.5.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-unicorn": "^47.0.0"
+    "eslint-plugin-unicorn": "^52.0.0"
   },
   "peerDependencies": {
-    "eslint": "^8.38.x",
-    "eslint-plugin-import": "^2.27.x",
-    "eslint-plugin-jest": "^27.x",
+    "eslint": "^9.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^28.2.0",
     "eslint-plugin-no-use-extend-native": "^0.5.0",
-    "eslint-plugin-node": "^11.x",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.x",
-    "eslint-plugin-unicorn": "^47.x"
+    "eslint-plugin-unicorn": "^52.0.0"
   }
 }

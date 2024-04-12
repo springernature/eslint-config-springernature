@@ -7,6 +7,7 @@
   "homepage": "https://github.com/springernature/eslint-config-springernature",
   "bugs": "https://github.com/springernature/eslint-config-springernature/issues",
   "author": "Springer Nature",
+  "main": "./index.js",
   "engines": {
     "node": ">=20"
   },

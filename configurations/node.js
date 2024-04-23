@@ -20,6 +20,8 @@ module.exports = {
 		'node/no-unpublished-bin': 'error',
 		'node/process-exit-as-throw': 'error',
 		'node/no-deprecated-api': 'error',
+		// unicorn overrides
+		"unicorn/prefer-module": 0,
 		'unicorn/catch-error-name': [
 			'error',
 			{

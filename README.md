@@ -143,6 +143,22 @@ These _optional_ extensions can be added in **addition** to one of the above con
 }
 ```
 
+```js
+// Core config extended with node config for subset of files
+// Useful if you use both node and browser js in the same repo
+{
+	"extends": "@springernature/eslint-config",
+	"overrides": [
+		{
+			"files": [
+				"path/to/app/files/*.js"
+			],
+			"extends": "@springernature/eslint-config/node"
+		}
+	]
+}
+```
+
 ### Ignore files/folders
 
 You can optionally create an `.eslintignore` file to ignore file paths. The `.eslintignore` file is a plain text file where each line is a glob pattern indicating which paths should be omitted from linting. For example, the following will ignore all files in the `tests` and `coverage` folders:

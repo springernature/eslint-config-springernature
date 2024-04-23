@@ -1,0 +1,11 @@
+{
+	"extends": "@springernature/eslint-config",
+	"overrides": [
+		{
+			"files": [
+				"path/to/app/files/*.js"
+			],
+			"extends": "@springernature/eslint-config/node"
+		}
+	]
+}

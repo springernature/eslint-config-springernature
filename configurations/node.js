@@ -1,20 +1,26 @@
 'use strict';
 
 module.exports = {
-	// Environment
 	// https://eslint.org/docs/user-guide/configuring#specifying-environments
 	env: {
 		node: true
 	},
 
-	// Plugins
+	// https://eslint.org/docs/user-guide/configuring/language-options#specifying-parser-options
+	parserOptions: {
+		sourceType: 'script'
+	},
+
 	plugins: [
 		'node'
 	],
 
-	// The lint rules
 	rules: {
 		'no-console': 'off',
+		'strict': [
+			'error',
+			'global'
+		],
 		// eslint-plugin-node
 		// https://github.com/mysticatea/eslint-plugin-node
 		'node/no-unpublished-bin': 'error',

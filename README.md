@@ -144,8 +144,8 @@ These _optional_ extensions can be added in **addition** to one of the above con
 ```
 
 ```js
-// Core config extended with node extension for subset of files
-// Useful if you both node and browser js in the same repo
+// Core config extended with node config for subset of files
+// Useful if you use both node and browser js in the same repo
 {
 	"extends": "@springernature/eslint-config",
 	"overrides": [

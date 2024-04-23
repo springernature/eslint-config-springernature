@@ -22,10 +22,8 @@ module.exports = {
 		'node/no-unpublished-bin': 'error',
 		'node/process-exit-as-throw': 'error',
 		'node/no-deprecated-api': 'error',
-		'strict': [
-			'error',
-			'global'
-		],
+		// unicorn overrides
+		"unicorn/prefer-module": 0,
 		'unicorn/catch-error-name': [
 			'error',
 			{
@@ -37,7 +35,7 @@ module.exports = {
 		'unicorn/prevent-abbreviations': [
 			'error',
 			{
-				'whitelist': {
+				'allowList': {
 					'err': true,
 					'req': true,
 					'res': true

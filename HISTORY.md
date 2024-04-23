@@ -1,5 +1,11 @@
 # History
 
+## 6.1.0 (2024-04-23)
+
+* v6.0.0 pushes ESM Modules, but for `node` environments we still want to support commonJS
+  * Remove `unicorn/prefer-module` rule for the `node` config
+  * For node environments, requires use of "global form of 'use strict'" i.e. requires `'use strict';` at top of file.
+
 ## 6.0.0 (2023-06-21)
 
 * Bump dependencies so that ESLint v8.* can be used in projects that also use @springernature/eslint-config

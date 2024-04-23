@@ -17,6 +17,10 @@ module.exports = {
 
 	rules: {
 		'no-console': 'off',
+		'strict': [
+			'error',
+			'global'
+		],
 		// eslint-plugin-node
 		// https://github.com/mysticatea/eslint-plugin-node
 		'node/no-unpublished-bin': 'error',

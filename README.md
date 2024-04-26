@@ -228,11 +228,11 @@ When you extend _eslint-config-springernature_ in the ESLint configuration file 
   ],
 ```
 
-you also inherit the global variables and syntax for the ECMAScript version defined in _eslint-config-springernature_ at that time.
+you also inherit the global variables (through the `env` language settings) and syntax rules (through the `parserOptions` language settings) for the ECMAScript version defined in _eslint-config-springernature_ at that time.
 
 It might not be obvious, but you can override these settings in that same ESLint configuration file. All settings defined in the same ESLint configuration file that contains the `extends` snippet from the example above will override the settings defined in _eslint-config-springernature_ if both are in conflict.
 
-As an example, you can configure ESLint to respect a more modern ECMAScript version for globals (by defining `env` settings) and syntax (by defining `parserOptions` settings) like this:
+As an example, you can configure ESLint to respect a more modern ECMAScript version for globals and syntax like this:
 
 ```javascript
   // You can override the extended settings either before 

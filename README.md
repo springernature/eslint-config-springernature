@@ -199,7 +199,62 @@ const zero; // eslint-disable-line no-unused-vars
 
 Please use per-project rules and `eslint-disable-line` and `eslint-disable-next-line` directives sparingly and only when strictly necessary.
 
-### Environments and configuration overrides
+### Overriding the _eslint-config-springernature_ configuration in your project
+
+The ESLint configuration of _eslint-config-springernature_ comes with settings that you might find to be outdated for your project:
+
+```javascript
+  // Environment
+  // https://eslint.org/docs/user-guide/configuring#specifying-environments
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+
+  // Parser options
+  // https://eslint.org/docs/user-guide/configuring#specifying-parser-options
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+```
+
+When you extend _eslint-config-springernature_ in the ESLint configuration file of your project:
+
+```javascript
+  "extends": [
+    "@springernature/eslint-config",
+    "@springernature/eslint-config/node",
+    "@springernature/eslint-config/jest"
+  ],
+```
+
+you also inherit the global variables (through the `env` language settings) and syntax rules (through the `parserOptions` language settings) for the ECMAScript version defined in _eslint-config-springernature_ at that time.
+
+It might not be obvious, but you can override these settings in that same ESLint configuration file. All settings defined in the same ESLint configuration file that contains the `extends` snippet from the example above will override the settings defined in _eslint-config-springernature_ if both are in conflict.
+
+As an example, you can configure ESLint to respect a more modern ECMAScript version for globals and syntax like this:
+
+```javascript
+  // You can override the extended settings either before 
+  // the "extends" setting:
+  "env": {
+    "es2023": true
+  },
+  "extends": [
+    "@springernature/eslint-config",
+    "@springernature/eslint-config/node",
+    "@springernature/eslint-config/jest"
+  ],
+  // ... or you can override the extended settings after
+  // the "extends" setting:
+  "parserOptions": {
+    "ecmaVersion": 2023
+  },
+```
+
+It doesn't matter if you place your setting overrides before or after the `extends` setting in your local ESLint configuration file - they will both override the settings of the extended ESLint configuration files.
+
+### Overriding the configuration for specific files or nested directories
 
 It's common to have specific files or directories that require different settings. For example, a folder in your project may contains tests that use `mocha`. Instead of defining the global variables that `mocha` expects manually, you can use [`environments`](https://eslint.org/docs/user-guide/configuring#specifying-environments) and [`overrides`](https://eslint.org/docs/user-guide/configuring#disabling-rules-only-for-a-group-of-files). You can also change specific rules for these files.
 
@@ -218,6 +273,16 @@ It's common to have specific files or directories that require different setting
     }
   ]
 ```
+
+### Reviewing your ESLint configuration effective for specific files
+
+It can get confusing which rules ESLint will actually use for linting specific files. By extending the ESLint configuration from _eslint-config-springernature_ using your own ESLint configuration file with additional and overriding rules, that even may include `overrides` settings for specific files or directories, you add complexity.
+
+You can review the configuration settings which ESLint will use for a specific file by typing in the following cli command:
+```bash
+npx eslint --print-config ./path/to/your/file.js
+```
+This allows you to have confidence in even challenging configuration files.
 
 ## Contributing
 

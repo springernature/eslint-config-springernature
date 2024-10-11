@@ -4,26 +4,27 @@
 
 ESLint shareable config used at [Springer Nature](https://www.springernature.com).
 
+- [Requirements](#requirements)
+- [Installation](#installation)
+  - [Using Yarn](#using-yarn)
+    - [Manual](#manual)
+    - [Automated](#automated)
+  - [Using NPM](#using-npm)
+- [Usage](#usage)
+  - [Examples](#examples)
+  - [Ignore files/folders](#ignore-filesfolders)
+  - [Per-project rules](#per-project-rules)
+  - [Environments and configuration overrides](#environments-and-configuration-overrides)
+- [Migration guide](#migration-guide)
+  - [v5 to v6](#v5-to-v6)
+- [Contributing](#contributing)
+
 ## Requirements
 
 This package requires:
 
 * [Node version 18 or greater](https://nodejs.org/en/download/releases) due to support for v16 running out soon this year. Please have a look at our [open source support page](https://github.com/springernature/frontend-playbook/blob/master/practices/open-source-support.md#node-versions) for details on which versions of node we support, and why. Version 5 of this package supports Node versions >=8 and <16.
 * `eslint` version 8.38.0 or greater (due to eslint-plugin-unicorn v47.0.0).
-
-## Upgrade note
-
-With version _6.0.0_, `eslint-config-springernature` switches to _ESlint version 8_, which is a major update. Up to version _5.x_,  `eslint-config-springernature` worked fine together with the module `gulp-eslint`. From version _6_ on, `gulp-eslint` will fail with the error message
-
-```shell
-Environment key "es2024" is unknown
-```
-
-which is related to the upgrade to _ESlint 8_.
-
-`gulp-eslint` has not been maintained for several years now and seems to be dead. Luckily, there's an updated version of that module called `gulp-eslint-new`, which works well with _ESlint 8_.
-
-So if you are using `gulp-eslint` and want to update `eslint-config-springernature` to version _6_, then you should replace `gulp-eslint` with `gulp-eslint-new`. 
 
 ## Installation
 
@@ -218,6 +219,22 @@ It's common to have specific files or directories that require different setting
     }
   ]
 ```
+
+## Migration guide
+
+### v5 to v6
+
+With version _6.0.0_, `eslint-config-springernature` switches to _ESlint version 8_, which is a major update. Up to version _5.x_,  `eslint-config-springernature` worked fine together with the module `gulp-eslint`. From version _6_ on, `gulp-eslint` will fail with the error message
+
+```shell
+Environment key "es2024" is unknown
+```
+
+which is related to the upgrade to _ESlint 8_.
+
+`gulp-eslint` has not been maintained for several years now and seems to be dead. Luckily, there's an updated version of that module called `gulp-eslint-new`, which works well with _ESlint 8_.
+
+So if you are using `gulp-eslint` and want to update `eslint-config-springernature` to version _6_, then you should replace `gulp-eslint` with `gulp-eslint-new`.
 
 ## Contributing
 

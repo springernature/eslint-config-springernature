@@ -4,6 +4,10 @@
 
 ESLint shareable config used at [Springer Nature](https://www.springernature.com).
 
+> [!WARNING]  
+> This repository is deprecated after v6.1.0  
+> For the latest version of the config please visit the [frontend-tooling repository](https://github.com/springernature/frontend-tooling/tree/main/linting/eslint)
+
 ## Requirements
 
 This package requires:
